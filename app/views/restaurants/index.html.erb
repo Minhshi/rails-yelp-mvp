@@ -1,0 +1,7 @@
+<h1>Minssi Restaurant Guide</h1>
+<ul>
+  <% @restaurants.each do |r| %>
+  <li><%= link_to r.name, restaurant_path(r) %></li>
+  <% end %>
+</ul>
+<h5><%= link_to "Add a new restaurant", new_restaurant_path %></h5>
